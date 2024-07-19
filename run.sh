@@ -6,5 +6,5 @@ fi
 git pull
 rm -rf .terraform
 terraform init -backend-config=env-${1}/state.tfvars
-terraform apply $2 -var-file=env${1}/main.tfvars -auto-approve
+terraform apply $2 -var-file=env-${1}/main.tfvars -auto-approve
 
