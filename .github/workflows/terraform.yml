@@ -13,6 +13,7 @@ jobs:
     needs: DEV
     steps:
       - run: echo Just a Dummy job
+
   UAT:
     runs-on: ubuntu-latest
     needs: QA
