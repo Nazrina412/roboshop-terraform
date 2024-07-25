@@ -16,8 +16,8 @@ jobs:
       - run: echo Just a Dummy job
   UAT:
     runs-on: ubuntu-latest
-    steps:
     needs: QA
+    steps:
       - uses: actions/checkout@v4
       - run: echo Just a Dummy job
 
@@ -29,4 +29,3 @@ jobs:
       - name: Terraform init
       - run: terraform init -backend-config=env-dev/state.tfvars
 
-###
