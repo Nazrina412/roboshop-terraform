@@ -27,14 +27,14 @@ QA:
     steps:
      - run: echo Just a Dummy job
 
-  UAT:
+UAT:
     runs-on: ubuntu-latest
     environment: uat
     needs: QA
     steps:
       - run: echo Just a Dummy job
 
-  PROD:
+PROD:
     runs-on: self-hosted
     environment: prod
     needs: UAT
